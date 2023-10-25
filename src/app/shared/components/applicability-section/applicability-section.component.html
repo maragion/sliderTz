@@ -1,0 +1,45 @@
+<section class='carusel-section' [style.backgroundImage]="'url(' + caruselItems[activePadeIndex]?.bgUrl + ')'">
+  <div class="menu-slider">
+    <div  *ngFor="let menuItem of groups; let i = index" class="{{activeGroupIndex === i?'menu-item active-item':'menu-item'}}" (click)="changeActiveSlider(i)">
+    <span class="menu-title">
+      {{menuItem.title}}
+    </span>
+    </div>
+
+  </div>
+  <div id="app">
+    <!-- Carousel slider -->
+
+    <div class="swiper" >
+      <div class="swiper-wrapper"   (mouseenter) ="mouseEnter() " (mouseleave) ="mouseLeave()">
+        <div class="swiper-slide"   *ngFor="let slide of caruselItems">
+          <!-- elements with  "swiper-carousel-animate-opacity" class will have animated opacity -->
+          <div class="swiper-carousel-animate-opacity">
+
+            <div class="slide-text-content">
+              <h2>{{slide.title}}</h2>
+              <p  *ngFor="let text of slide.items">{{text}}</p>
+
+              <button class="button-default">
+                Подробнее
+              </button>
+            </div>
+            <div class="image">
+              <img [src]="slide.phoneImgUrl" alt="">
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="swiper-pagination">
+    <span  *ngFor="let page of caruselItems; let i = index" (click)='paginate(i)'
+           [class.swiper-pagination-bullet]="true"
+           [class.swiper-pagination-bullet-active]="activePadeIndex === i">
+    </span>
+    </div>
+  </div>
+</section>
+
