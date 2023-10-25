@@ -60,8 +60,7 @@ section{
     }
     .swiper-carousel-animate-opacity{
         background: linear-gradient(260deg, #2F313D -20.66%, #151720 103.61%);
-        border-radius: 20px;
-        height:437px;
+        border-radius: 20px;height:437px;
         display: flex;
     }
     .slide-text-content{
@@ -135,20 +134,20 @@ section{
 }
 
 .swiper-pagination{
-  width: 100%;
+    width: 100%;
 }
 
 .swiper-pagination-bullet{
-  width: 11px;
-  height: 5px;
-  border-radius: 4px;
-  background: rgba(217, 217, 217, 0.2);
-  opacity: 1;
-  margin: 0 2.5px !important;
-  //transition: 0.5s;
-  cursor: pointer;
+    width: 11px;
+    height: 5px;
+    border-radius: 4px;
+    background: rgba(217, 217, 217, 0.2);
+    opacity: 1;
+    margin: 0 2.5px !important;
+    //transition: 0.5s;
+    cursor: pointer;
 }
 .swiper-pagination-bullet-active {
-  width: 28px;
-  background: #A36DEA !important;
+    width: 28px;
+    background: #A36DEA !important;
 }

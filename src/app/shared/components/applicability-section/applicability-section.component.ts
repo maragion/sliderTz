@@ -68,7 +68,6 @@ export class ApplicabilitySectionComponent extends BaseComponent implements OnIn
         this._initSwiper();
     }
 
-
     private _initSwiper(): void {
         for (let i = 0; i < this.groups.length; i++) {
             const groupIndex = i;
@@ -88,6 +87,8 @@ export class ApplicabilitySectionComponent extends BaseComponent implements OnIn
             resizeObserver: true,
             slideToClickedSlide: true,
         });
+
+
         this.slider.on('slideChange', (e: any): void => {
             this.activePadeIndex = e.realIndex;
             if (this.caruselItems[this.activePadeIndex].groupIndex !== this.activeGroupIndex) {
@@ -133,7 +134,7 @@ export class ApplicabilitySectionComponent extends BaseComponent implements OnIn
             { opacity: 1 },
         ];
         if (element) {
-            element.animate(keyframes, 300);
+            element.animate(keyframes, 1000);
         }
     }
 
@@ -161,4 +162,6 @@ export class ApplicabilitySectionComponent extends BaseComponent implements OnIn
         this.sliderDilay = 0;
         this._setSliderInterval(3000);
     }
+
+
 }
