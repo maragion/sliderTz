@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { HamburgerComponent } from './components/hamburger/hamburger.component';
@@ -8,8 +8,12 @@ import { NgZorroAntdModule } from './ng-zorro-antd/ng-zorro-antd.module';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import {
-    ApplicabilitySectionComponent
+    ApplicabilitySectionComponent,
 } from '@shared/components/applicability-section/applicability-section.component';
+import { SwiperDirective } from './directives/swiper.directive';
+import { register } from 'swiper/element/bundle';
+
+register();
 
 const OWNER_MODULES_EXPORT = [CommonModule];
 
@@ -20,7 +24,8 @@ const OWNER_MODULES_EXPORT = [CommonModule];
         TurnOverComponent,
 
         IfIsBrowserDirective,
-        ApplicabilitySectionComponent
+        ApplicabilitySectionComponent,
+        SwiperDirective,
     ],
     imports: [...OWNER_MODULES_EXPORT, NgOptimizedImage, NgZorroAntdModule, FormsModule, ReactiveFormsModule],
     exports: [
@@ -32,6 +37,7 @@ const OWNER_MODULES_EXPORT = [CommonModule];
 
         ...OWNER_MODULES_EXPORT,
     ],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class SharedModule {
 }
