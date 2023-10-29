@@ -12,7 +12,7 @@ export default function CarouselSliderLarge({ swiper, on }) {
     });
     on('progress', () => {
         if (swiper.params.effect !== 'carousel') return;
-        const scaleStep = 0.2;
+        const scaleStep = 0.185;
         const zIndexMax = swiper.slides.length;
         for (let i = 0; i < swiper.slides.length; i += 1) {
             const slideEl = swiper.slides[i];
@@ -20,13 +20,13 @@ export default function CarouselSliderLarge({ swiper, on }) {
             const absProgress = Math.abs(slideProgress);
             let modify = 1;
             if (absProgress > 1) {
-                modify = (absProgress - 1) * 0.3 + 1;
+                modify = (absProgress - 1) * 0.484 + 1;
             }
             const opacityEls = slideEl.querySelectorAll(
                 '.swiper-carousel-animate-opacity',
             );
             const translate = `${
-                slideProgress * modify * 87 * (swiper.rtlTranslate ? -1 : 1)
+                slideProgress * modify * 100 * (swiper.rtlTranslate ? -.8 : .8)
             }%`;
 
             const scale = 1 - absProgress * scaleStep;
