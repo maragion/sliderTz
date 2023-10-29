@@ -1,4 +1,8 @@
 <section class="carusel-section" [style.backgroundImage]="'url(' + caruselItems[activePadeIndex]?.bgUrl + ')'">
+
+  <h2>применимость</h2>
+
+
   <div class="menu-slider">
     <div *ngFor="let menuItem of groups; let i = index"
          class="{{activeGroupIndex === i?'menu-item active-item':'menu-item'}}" (click)="changeActiveSlider(i)">
