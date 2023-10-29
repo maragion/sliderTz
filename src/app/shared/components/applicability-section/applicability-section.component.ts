@@ -95,12 +95,6 @@ export class ApplicabilitySectionComponent extends BaseComponent implements OnIn
         this.getRealSlideIndex(this.realIndex);
         this._setSliderInterval(3000);
         this._toggleAnimation();
-
-
-        // this.swiper.nativeElement.addEventListener('realindexchange', (e): void => {
-        //     // this._getActiveGroup();
-        // });
-
     }
 
     private _getCarouselItems(): void {
@@ -191,6 +185,8 @@ export class ApplicabilitySectionComponent extends BaseComponent implements OnIn
         this._toggleAnimation();
     }
 
+
+    // Pagination
     public getRealSlideIndex(index: any): void {
         const swiperSlides = this.swiper.nativeElement.swiper.slides;
 
