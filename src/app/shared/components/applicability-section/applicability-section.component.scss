@@ -48,6 +48,23 @@ section {
     z-index: -1;
 }
 
+.gif {
+    opacity: 0.4;
+    position: absolute;
+    text-align: center;
+    top: -10px;
+    z-index: -1;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    img {
+        width: 851px;
+        height: 851px;
+        transform: rotate(-90deg);
+        left: 50%;
+        opacity: 0.4;
+    }
+}
 
 h2 {
     margin-bottom: 50px;
