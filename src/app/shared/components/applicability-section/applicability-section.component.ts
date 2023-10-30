@@ -2,7 +2,7 @@ import {
     ChangeDetectionStrategy,
     ChangeDetectorRef,
     Component,
-    HostListener, Inject,
+    Inject,
     OnInit,
     ViewEncapsulation,
     PLATFORM_ID,
@@ -47,7 +47,6 @@ export class ApplicabilitySectionComponent extends BaseComponent implements OnIn
     // Swiper
     public swiperConfig: SwiperOptions = {
         loop: true,
-        modules: [this.currentConfig, Autoplay],
         effect: 'carousel',
         slidesPerView: 'auto',
         shortSwipes: true,
@@ -58,14 +57,8 @@ export class ApplicabilitySectionComponent extends BaseComponent implements OnIn
         slideToClickedSlide: true,
     };
 
-
     public constructor(public cdr: ChangeDetectorRef, @Inject(PLATFORM_ID) private _platformId: string) {
         super();
-        this._detectScreenSize();
-    }
-
-    @HostListener('window:resize', ['$event'])
-    public onResize(): void {
         this._detectScreenSize();
     }
 
@@ -85,8 +78,9 @@ export class ApplicabilitySectionComponent extends BaseComponent implements OnIn
 
     public ngOnInit(): void {
         if (typeof document === 'undefined') return;
-        this._getCarouselItems();
         this._detectScreenSize();
+        this.swiperConfig.modules = [this.currentConfig, Autoplay];
+        this._getCarouselItems();
         this._getCurrentPagination(this.activeGroupIndex);
     }
 
