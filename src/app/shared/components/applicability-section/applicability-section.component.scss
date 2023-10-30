@@ -46,7 +46,7 @@ section {
     z-index: -1;
 }
 
-.gif {
+.animation {
     opacity: 0.4;
     position: absolute;
     width: 100%;
@@ -58,7 +58,7 @@ section {
     justify-content: center;
     align-items: center;
 
-    img {
+    video {
         width: 851px;
         height: 851px;
         transform: rotate(-90deg);
@@ -288,8 +288,8 @@ h2 {
         padding: 130px 0;
     }
 
-    .gif {
-        img {
+    .animation {
+        video {
             height: 85%;
         }
     }
@@ -309,10 +309,10 @@ h2 {
         padding-top: 20px;
     }
 
-    .gif {
+    .animation {
         top: 0;
 
-        img {
+        video {
             width: auto;
             height: 100%;
         }
@@ -330,9 +330,9 @@ h2 {
 
     }
 
-    .gif {
+    .animation {
 
-        img {
+        video {
             width: 519px;
             height: 519px;
         }
