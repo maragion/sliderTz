@@ -20,13 +20,13 @@ export default function CarouselSlider({ swiper, on }) {
             const absProgress = Math.abs(slideProgress);
             let modify = 1;
             if (absProgress > 1) {
-                modify = (absProgress - 1) * 0.3 + 1;
+                modify = (absProgress - 1) * 0.1 + 1;
             }
             const opacityEls = slideEl.querySelectorAll(
                 '.swiper-carousel-animate-opacity',
             );
             const translate = `${
-                slideProgress * modify * 50 * (swiper.rtlTranslate ? -1 : 1)
+                slideProgress * modify * 82 * (swiper.rtlTranslate ? -1 : 1)
             }%`;
 
             const scale = 1 - absProgress * scaleStep;
