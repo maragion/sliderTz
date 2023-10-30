@@ -1,7 +1,7 @@
 <section class="carusel-section">
 
-  <div class="carousel-background" [style.backgroundImage]="'url(' + caruselItems[activePadeIndex]?.bgUrl + ')'">
-
+  <div class="carousel-background" >
+    <img ngSrc='{{caruselItems[activePadeIndex]?.bgUrl}}' fill="true">
   </div>
   <h2>применимость</h2>
 

@@ -36,7 +36,6 @@ section {
 
 .carousel-background {
     position: absolute;
-    background: lightgray 50% / cover no-repeat;
     top: 0;
     left: 0;
     bottom: 0;
@@ -44,6 +43,11 @@ section {
     transition: ease-in 0.5s;
     opacity: 0.05;
     z-index: -1;
+
+    img {
+        object-fit: cover;
+
+    }
 }
 
 .animation {
@@ -311,11 +315,6 @@ h2 {
 
     .animation {
         top: 0;
-
-        video {
-            width: auto;
-            height: 100%;
-        }
     }
 
     .menu-slider {
