@@ -6,8 +6,7 @@
     max-width: 100%;
     overflow: hidden;
 
-    .swiper-slide,
-    swiper-slide {
+    .swiper-slide {
         position: relative;
     }
 }
@@ -32,18 +31,17 @@
 section {
     padding: 170px 0;
     position: relative;
+    overflow: hidden;
 }
 
 .carousel-background {
     position: absolute;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: lightgray 50% / cover no-repeat;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    transition: ease .5s;
+    transition: ease-in 0.5s;
     opacity: 0.05;
     z-index: -1;
 }
@@ -51,17 +49,19 @@ section {
 .gif {
     opacity: 0.4;
     position: absolute;
-    text-align: center;
-    top: -10px;
+    width: 100%;
+    top: 0;
     z-index: -1;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     img {
         width: 851px;
         height: 851px;
         transform: rotate(-90deg);
-        left: 50%;
         opacity: 0.4;
     }
 }
@@ -79,8 +79,7 @@ h2 {
         height: 437px;
         border-radius: 20px;
         max-width: 1430px;
-        width: 44.48%;
-
+        width: 846px;
         background: #18212b;
     }
 
@@ -92,14 +91,14 @@ h2 {
         display: inline-block;
         margin-top: 49px;
         height: 388px;
-    }
 
-    img {
-        width: 100%;
-        height: 100%;
-        display: block;
-        object-fit: cover;
-        border-radius: 8px;
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            border-radius: 8px;
+        }
     }
 
     .swiper-carousel-animate-opacity {
@@ -119,17 +118,15 @@ h2 {
         h2 {
             color: #F4F0FF;
             font-size: 32px;
-            font-style: normal;
             font-weight: 700;
-            line-height: 52.503px; /* 164.073% */
+            line-height: 1.64073;
         }
 
         p {
             color: rgba(239, 237, 253, 0.70);
             font-size: 16px;
-            font-style: normal;
             font-weight: 400;
-            line-height: 29.088px; /* 181.802% */
+            line-height: 29.088px;
             margin-bottom: 0;
         }
 
@@ -140,13 +137,66 @@ h2 {
     }
 
     @media (max-width: 1280px) {
+
         .swiper-slide {
-            width: calc(100% - 60px);
+            width: 66%;
+            min-width: 650px;
+        }
+
+        .swiper-carousel-animate-opacity {
+            padding: 0 5px;
+        }
+
+        .slide-text-content {
+            padding-right: 5px;
+
+            h2 {
+                font-size: 20px;
+                line-height: 52.503px;
+            }
+
+            p {
+                font-size: 13px;
+                line-height: 20px;
+            }
         }
     }
+
     @media (max-width: 768px) {
+
         .swiper-slide {
-            width: calc(100% - 10px);
+            min-width: 349px;
+            width: 75%;
+            height: auto;
+        }
+
+        .swiper-carousel-animate-opacity {
+            flex-wrap: wrap;
+            height: auto;
+            justify-content: center;
+        }
+
+        .image {
+            //margin-top: 41px;
+            width: 185px;
+            height: 309px;
+            align-self: flex-end;
+        }
+
+        img {
+            border-radius: 8px;
+        }
+
+        .slide-text-content {
+            margin-top: 70px;
+            min-width: 249px;
+            text-align: center;
+
+
+            .button-default {
+                margin-top: 68px;
+                margin-bottom: 0;
+            }
         }
     }
 
@@ -156,31 +206,56 @@ h2 {
         .swiper-button-prev {
             display: none !important;
         }
+
+        .swiper-slide {
+            min-width: auto;
+            width: 94.6%;
+            height: auto;
+            padding: 0;
+        }
+
+        .image {
+            margin-top: 31px;
+        }
+
+        .slide-text-content {
+            margin-top: 31px;
+            width: 100%;
+            padding: 0 5px;
+
+            h2 {
+                font-size: 20px;
+                margin-bottom: 0;
+            }
+
+            p {
+                font-size: 13px;
+                line-height: 20px;
+            }
+
+            .button-default {
+                margin-top: 72px;
+                margin-bottom: 0;
+            }
+        }
     }
-
 }
-
-//
-//@media (max-width: 1280px) {
-//    .swiper-carousel {
-//        max-width: calc(100% - 80px);
-//    }
-//}
 
 .menu-slider {
     display: flex;
     flex-direction: row;
-    gap: 10px;
-    //margin-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 16px;
     padding: 0 1.58%;
 }
 
 .menu-item {
     border-radius: 20px;
     cursor: pointer;
-    padding: 10px;
-    /* CSS Gradient */
+    padding: 6px 15px;
     background: linear-gradient(to right, rgba(229, 156, 255, 0.11) 0%, rgba(186, 156, 255, 0.09) 50%, rgba(156, 178, 255, 0.09) 100%);
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .active-item {
@@ -199,11 +274,77 @@ h2 {
     background: rgba(217, 217, 217, 0.2);
     opacity: 1;
     margin: 0 2.5px !important;
-    //transition: 0.5s;
     cursor: pointer;
 }
 
 .swiper-pagination-bullet-active {
     width: 28px;
     background: #A36DEA !important;
+}
+
+@media (max-width: 1280px) {
+
+    section {
+        padding: 130px 0;
+    }
+
+    .gif {
+        img {
+            height: 85%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    section {
+        padding: 70px 0;
+    }
+
+    .swiper-carousel {
+        padding-top: 20px;
+    }
+
+    .gif {
+        top: 0;
+
+        img {
+            width: auto;
+            height: 100%;
+        }
+    }
+
+    .menu-slider {
+        padding: 0 47px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .swiper-carousel {
+        padding: 20px 10px;
+
+    }
+
+    .gif {
+
+        img {
+            width: 519px;
+            height: 519px;
+        }
+    }
+
+    .menu-slider {
+        padding: 0 20px;
+        gap: 10px;
+    }
+
+    .menu-item {
+        font-size: 14px;
+        height: 32px;
+    }
 }
