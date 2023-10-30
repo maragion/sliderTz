@@ -14,6 +14,9 @@ import EffectCarousel from './effect-carousel.esm.js';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 //@ts-ignore
 import EffectCarouselLarge from './effect-carousel-large.esm.js';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore
+import EffectCarouselSmall from './effect-carousel-small.esm.js';
 import { DATA } from './data';
 import { isPlatformBrowser } from '@angular/common';
 import { Autoplay } from 'swiper/modules';
@@ -70,6 +73,8 @@ export class ApplicabilitySectionComponent extends BaseComponent implements OnIn
 
             if (windowWidth > 1280) {
                 this.currentConfig = EffectCarouselLarge;
+            } else if (windowWidth < 481) {
+                this.currentConfig = EffectCarouselSmall;
             } else {
                 this.currentConfig = EffectCarousel;
             }
