@@ -11,7 +11,7 @@ export const DATA = [
                     'Контроль собственных активов и расходов',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-1.png',
+                bgUrl: 'assets/images/common/applicability-back-1.webp',
             },
             {
                 title: 'Гос. учреждениям 1',
@@ -20,7 +20,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-2.png',
+                bgUrl: 'assets/images/common/applicability-back-2.webp',
             },
             {
                 title: 'Гос. учреждениям 2',
@@ -29,7 +29,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-3.png',
+                bgUrl: 'assets/images/common/applicability-back-3.webp',
             },
             {
                 title: 'Гос. учреждениям 3',
@@ -38,7 +38,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-1.png',
+                bgUrl: 'assets/images/common/applicability-back-1.webp',
             },
             {
                 title: 'Гос. учреждениям 4',
@@ -47,7 +47,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-4.png',
+                bgUrl: 'assets/images/common/applicability-back-4.webp',
             }
 
         ],
@@ -63,7 +63,7 @@ export const DATA = [
                     'Контроль собственных активов и расходов',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-1.png',
+                bgUrl: 'assets/images/common/applicability-back-1.webp',
             },
             {
                 title: '2 Гос. учреждениям 1',
@@ -72,7 +72,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-2.png',
+                bgUrl: 'assets/images/common/applicability-back-2.webp',
             },
             {
                 title: '2 Гос. учреждениям 2',
@@ -81,7 +81,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-3.png',
+                bgUrl: 'assets/images/common/applicability-back-3.webp',
             },
             {
                 title: '2 Гос. учреждениям 3',
@@ -90,7 +90,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-1.png',
+                bgUrl: 'assets/images/common/applicability-back-1.webp',
             },
             {
                 title: '2 Гос. учреждениям 4',
@@ -99,7 +99,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-4.png',
+                bgUrl: 'assets/images/common/applicability-back-4.webp',
             }
         ],
     },
@@ -114,7 +114,7 @@ export const DATA = [
                     'Контроль собственных активов и расходов',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-1.png',
+                bgUrl: 'assets/images/common/applicability-back-1.webp',
             },
             {
                 title: '3 Гос. учреждениям 1',
@@ -123,7 +123,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-2.png',
+                bgUrl: 'assets/images/common/applicability-back-2.webp',
             },
             {
                 title: '3 Гос. учреждениям 2',
@@ -132,7 +132,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-3.png',
+                bgUrl: 'assets/images/common/applicability-back-3.webp',
             },
             {
                 title: '3 Гос. учреждениям 3',
@@ -141,7 +141,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-1.png',
+                bgUrl: 'assets/images/common/applicability-back-1.webp',
             },
             {
                 title: '3 Гос. учреждениям 4',
@@ -150,7 +150,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-4.png',
+                bgUrl: 'assets/images/common/applicability-back-4.webp',
             }
         ],
     },
@@ -165,7 +165,7 @@ export const DATA = [
                     'Контроль собственных активов и расходов',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-1.png',
+                bgUrl: 'assets/images/common/applicability-back-1.webp',
             },
             {
                 title: '4 Гос. учреждениям 1',
@@ -174,7 +174,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-2.png',
+                bgUrl: 'assets/images/common/applicability-back-2.webp',
             },
             {
                 title: '4 Гос. учреждениям 2',
@@ -183,7 +183,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-3.png',
+                bgUrl: 'assets/images/common/applicability-back-3.webp',
             },
             {
                 title: '4 Гос. учреждениям 3',
@@ -192,7 +192,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-1.png',
+                bgUrl: 'assets/images/common/applicability-back-1.webp',
             },
             {
                 title: '4 Гос. учреждениям 4',
@@ -201,7 +201,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-4.png',
+                bgUrl: 'assets/images/common/applicability-back-4.webp',
             }
         ],
     },
@@ -216,7 +216,7 @@ export const DATA = [
                     'Контроль собственных активов и расходов',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-1.png',
+                bgUrl: 'assets/images/common/applicability-back-1.webp',
             },
             {
                 title: '5 Гос. учреждениям 1',
@@ -225,7 +225,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-2.png',
+                bgUrl: 'assets/images/common/applicability-back-2.webp',
             },
             {
                 title: '5 Гос. учреждениям 2',
@@ -234,7 +234,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-3.png',
+                bgUrl: 'assets/images/common/applicability-back-3.webp',
             },
             {
                 title: '5 Гос. учреждениям 3',
@@ -243,7 +243,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-1.png',
+                bgUrl: 'assets/images/common/applicability-back-1.webp',
             },
             {
                 title: '5 Гос. учреждениям 4',
@@ -252,7 +252,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-4.png',
+                bgUrl: 'assets/images/common/applicability-back-4.webp',
             }
         ],
     },
@@ -267,7 +267,7 @@ export const DATA = [
                     'Контроль собственных активов и расходов',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-1.png',
+                bgUrl: 'assets/images/common/applicability-back-1.webp',
             },
             {
                 title: '6 Гос. учреждениям 1',
@@ -276,7 +276,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-2.png',
+                bgUrl: 'assets/images/common/applicability-back-2.webp',
             },
             {
                 title: '6 Гос. учреждениям 2',
@@ -285,7 +285,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-3.png',
+                bgUrl: 'assets/images/common/applicability-back-3.webp',
             },
             {
                 title: '6 Гос. учреждениям 3',
@@ -294,7 +294,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-1.png',
+                bgUrl: 'assets/images/common/applicability-back-1.webp',
             },
             {
                 title: '6 Гос. учреждениям 4',
@@ -303,7 +303,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-4.png',
+                bgUrl: 'assets/images/common/applicability-back-4.webp',
             }
         ],
     },
@@ -318,7 +318,7 @@ export const DATA = [
                     'Контроль собственных активов и расходов',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-1.png',
+                bgUrl: 'assets/images/common/applicability-back-1.webp',
             },
             {
                 title: '7 Гос. учреждениям 1',
@@ -327,7 +327,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-2.png',
+                bgUrl: 'assets/images/common/applicability-back-2.webp',
             },
             {
                 title: '7 Гос. учреждениям 2',
@@ -336,7 +336,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-3.png',
+                bgUrl: 'assets/images/common/applicability-back-3.webp',
             },
             {
                 title: '7 Гос. учреждениям 3',
@@ -345,7 +345,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-1.png',
+                bgUrl: 'assets/images/common/applicability-back-1.webp',
             },
             {
                 title: '7 Гос. учреждениям 4',
@@ -354,7 +354,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-4.png',
+                bgUrl: 'assets/images/common/applicability-back-4.webp',
             }
         ],
     },
@@ -369,7 +369,7 @@ export const DATA = [
                     'Контроль собственных активов и расходов',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-1.png',
+                bgUrl: 'assets/images/common/applicability-back-1.webp',
             },
             {
                 title: '8 Гос. учреждениям 1',
@@ -378,7 +378,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-2.png',
+                bgUrl: 'assets/images/common/applicability-back-2.webp',
             },
             {
                 title: '8 Гос. учреждениям 2',
@@ -387,7 +387,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-3.png',
+                bgUrl: 'assets/images/common/applicability-back-3.webp',
             },
             {
                 title: '8 Гос. учреждениям 3',
@@ -396,7 +396,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-1.png',
+                bgUrl: 'assets/images/common/applicability-back-1.webp',
             },
             {
                 title: '8 Гос. учреждениям 4',
@@ -405,7 +405,7 @@ export const DATA = [
                     'Отслеживание выделяемого бюджета',
                 ],
                 phoneImgUrl: 'assets/images/common/Frame-40919.png',
-                bgUrl: 'assets/images/common/applicability-back-4.png',
+                bgUrl: 'assets/images/common/applicability-back-4.webp',
             }
         ],
     }
