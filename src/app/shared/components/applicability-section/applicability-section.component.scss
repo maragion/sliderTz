@@ -40,14 +40,10 @@ section {
     left: 0;
     bottom: 0;
     right: 0;
-    transition: ease-in 0.5s;
     opacity: 0.05;
     z-index: -1;
+    transition: .5s ease-in-out;
 
-    img {
-        object-fit: cover;
-
-    }
 }
 
 .animation {
