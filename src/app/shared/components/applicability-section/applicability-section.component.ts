@@ -36,7 +36,6 @@ import { SwiperOptions } from 'swiper/types';
 })
 export class ApplicabilitySectionComponent extends BaseComponent implements OnInit, AfterViewInit {
 
-
     public groups: any = DATA;
     public sliderDilay: any;
     public sliderInterval: any;
@@ -91,7 +90,7 @@ export class ApplicabilitySectionComponent extends BaseComponent implements OnIn
 
     public ngAfterViewInit(): void {
         this._getActiveGroup();
-        this.getRealSlideIndex(this.realIndex);
+        this._getRealSlideIndex(this.realIndex);
         this._setSliderInterval(3000);
         this._toggleAnimation();
     }
@@ -108,7 +107,6 @@ export class ApplicabilitySectionComponent extends BaseComponent implements OnIn
             }
         }
     }
-
 
     private _getActiveGroup(): void {
         this.swiper.nativeElement.swiper.on('slideChange', (e: any): void => {
@@ -131,7 +129,7 @@ export class ApplicabilitySectionComponent extends BaseComponent implements OnIn
             }
 
             this.sliderInterval = setInterval(() => {
-                this.getRealSlideIndex(this.activePadeIndex);
+                this._getRealSlideIndex(this.activePadeIndex);
 
                 const nextIndex = this.realIndex + 1;
 
@@ -147,7 +145,6 @@ export class ApplicabilitySectionComponent extends BaseComponent implements OnIn
 
     }
 
-
     // Function to change the animation state
     private _toggleAnimation(): void {
         const element = document.querySelector('.carusel-section');
@@ -160,7 +157,6 @@ export class ApplicabilitySectionComponent extends BaseComponent implements OnIn
             element.animate(keyframes, 600);
         }
     }
-
 
     public mouseEnter(): void {
         this._setSliderInterval(6000);
@@ -184,9 +180,8 @@ export class ApplicabilitySectionComponent extends BaseComponent implements OnIn
         this._toggleAnimation();
     }
 
-
     // Pagination
-    public getRealSlideIndex(index: any): void {
+    private _getRealSlideIndex(index: any): void {
         const swiperSlides = this.swiper.nativeElement.swiper.slides;
 
         this.realIndex = swiperSlides.findIndex((value: any) => {
@@ -195,13 +190,12 @@ export class ApplicabilitySectionComponent extends BaseComponent implements OnIn
     }
 
     public paginate(index: any): void {
-        this.getRealSlideIndex(index);
+        this._getRealSlideIndex(index);
         this.swiper.nativeElement.swiper.slideTo(this.realIndex);
         this.cdr.detectChanges();
         this.sliderDilay = 0;
         this._setSliderInterval(3000);
     }
-
 
     private _getCurrentPagination(index: number): void {
         const itemsPerPage = 5;
