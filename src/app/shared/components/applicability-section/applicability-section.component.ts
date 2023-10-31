@@ -89,10 +89,13 @@ export class ApplicabilitySectionComponent extends BaseComponent implements OnIn
     }
 
     public ngAfterViewInit(): void {
-        this._getActiveGroup();
-        this._getRealSlideIndex(this.realIndex);
-        this._setSliderInterval(3000);
-        this._toggleAnimation();
+        if (isPlatformBrowser(this._platformId)) {
+            this._getActiveGroup();
+            this._getRealSlideIndex(this.realIndex);
+            this._setSliderInterval(3000);
+            this._toggleAnimation();
+        }
+
     }
 
     private _getCarouselItems(): void {
