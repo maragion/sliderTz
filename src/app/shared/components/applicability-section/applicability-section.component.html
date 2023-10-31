@@ -1,7 +1,7 @@
 <section class="carusel-section">
 
   <div class="carousel-background" >
-    <img ngSrc='{{caruselItems[activePadeIndex]?.bgUrl}}' fill="true">
+    <img alt="background" ngSrc='{{caruselItems[activePadeIndex]?.bgUrl}}' fill="true" priority="true">
   </div>
   <h2>применимость</h2>
 
@@ -17,7 +17,7 @@
   </div>
 
   <div class="animation">
-    <video preload="auto" *ngIf="true" autoplay loop muted onloadedmetadata="this.muted = true">
+    <video preload="auto" autoplay loop muted onloadedmetadata="this.muted = true">
       <source src="assets/images/video/background-animation.mp4" type="video/mp4">
     </video>
   </div>
