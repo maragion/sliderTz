@@ -26,7 +26,7 @@ export default function CarouselSlider({ swiper, on }) {
                 '.swiper-carousel-animate-opacity',
             );
             const translate = `${
-                slideProgress * modify * 82 * (swiper.rtlTranslate ? -1 : 1)
+                slideProgress * modify * 86.4 * (swiper.rtlTranslate ? -1 : 1)
             }%`;
 
             const scale = 1 - absProgress * scaleStep;

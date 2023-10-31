@@ -30,10 +30,7 @@ export default function CarouselSliderSmall({ swiper, on }) {
                 slideProgress * modify * 90 * (swiper.rtlTranslate ? -1 : 1)
             }%`
 
-            console.log(translate)
             const scale = 1 - absProgress * scaleStep;
-            console.log(scale, `scale`)
-
             const zIndex = zIndexMax - Math.abs(Math.round(slideProgress));
 
             slideEl.style.zIndex = zIndex;
