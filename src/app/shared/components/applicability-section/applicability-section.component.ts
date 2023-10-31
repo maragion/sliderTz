@@ -18,7 +18,7 @@ import EffectCarouselLarge from './effect-carousel-large.esm.js';
 //@ts-ignore
 import EffectCarouselSmall from './effect-carousel-small.esm.js';
 import { DATA } from './data';
-import { isPlatformBrowser, NgOptimizedImage } from '@angular/common';
+import { isPlatformBrowser } from '@angular/common';
 import { Autoplay } from 'swiper/modules';
 
 import { AfterViewInit, ElementRef, ViewChild } from '@angular/core';
