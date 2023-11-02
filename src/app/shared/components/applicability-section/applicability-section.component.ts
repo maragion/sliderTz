@@ -147,14 +147,14 @@ export class ApplicabilitySectionComponent extends BaseComponent implements OnIn
     }
 
     private _stopOnInteraction(): void {
-        this.swiper.nativeElement.addEventListener('touchstart', ev => {
+        this.swiper.nativeElement.addEventListener('touchstart', _ => {
             clearInterval(this.sliderInterval);
             this.sliderDelay = 0;
         });
     }
 
     private _resumeSlideScroll(): void {
-        this.swiper.nativeElement.addEventListener('touchend', ev => {
+        this.swiper.nativeElement.addEventListener('touchend', _ => {
             this._setSliderInterval(6000);
         });
     }
