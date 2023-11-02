@@ -5,8 +5,8 @@
     margin: 0 auto;
     max-width: 100%;
     overflow: hidden;
-
-    .swiper-slide {
+    .swiper-slide,
+    swiper-slide {
         position: relative;
     }
 }
@@ -106,6 +106,7 @@ h2 {
         border-radius: 20px;
         height: 437px;
         display: flex;
+        padding: 10px;
     }
 
     .slide-text-content {
