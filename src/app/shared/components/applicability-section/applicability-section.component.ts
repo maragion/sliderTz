@@ -19,7 +19,6 @@ import EffectCarouselLarge from './effect-carousel-large.esm.js';
 import EffectCarouselSmall from './effect-carousel-small.esm.js';
 import { DATA } from './data';
 import { isPlatformBrowser } from '@angular/common';
-import { Autoplay } from 'swiper/modules';
 
 import { AfterViewInit, ElementRef, ViewChild } from '@angular/core';
 import { SwiperContainer } from 'swiper/element';
@@ -37,7 +36,7 @@ import { SwiperOptions } from 'swiper/types';
 export class ApplicabilitySectionComponent extends BaseComponent implements OnInit, AfterViewInit {
 
     public groups: any = DATA;
-    public sliderDilay: any;
+    public sliderDelay: any;
     public sliderInterval: any;
     public activeGroupIndex = 0;
     public activePadeIndex = 0;
@@ -83,7 +82,7 @@ export class ApplicabilitySectionComponent extends BaseComponent implements OnIn
     public ngOnInit(): void {
         if (typeof document === 'undefined') return;
         this._detectScreenSize();
-        this.swiperConfig.modules = [this.currentConfig, Autoplay];
+        this.swiperConfig.modules = [this.currentConfig];
         this._getCarouselItems();
         this._getCurrentPagination(this.activeGroupIndex);
     }
@@ -93,7 +92,8 @@ export class ApplicabilitySectionComponent extends BaseComponent implements OnIn
             this._getActiveGroup();
             this._getRealSlideIndex(this.realIndex);
             this._setSliderInterval(3000);
-            this._toggleAnimation();
+            this._stopOnInteraction();
+            this._resumeSlideScroll();
         }
 
     }
@@ -117,7 +117,6 @@ export class ApplicabilitySectionComponent extends BaseComponent implements OnIn
 
             if (this.caruselItems[this.activePadeIndex].groupIndex !== this.activeGroupIndex) {
                 this.activeGroupIndex = this.caruselItems[this.activePadeIndex].groupIndex;
-                this._toggleAnimation();
             }
 
             this._getCurrentPagination(this.activeGroupIndex);
@@ -126,7 +125,7 @@ export class ApplicabilitySectionComponent extends BaseComponent implements OnIn
     }
 
     private _setSliderInterval(delay: number): void {
-        if (this.sliderDilay !== delay) {
+        if (this.sliderDelay !== delay) {
             if (this.sliderInterval) {
                 clearInterval(this.sliderInterval);
             }
@@ -143,22 +142,21 @@ export class ApplicabilitySectionComponent extends BaseComponent implements OnIn
                 }
             }, delay);
 
-            this.sliderDilay = delay;
+            this.sliderDelay = delay;
         }
-
     }
 
-    // Function to change the animation state
-    private _toggleAnimation(): void {
-        const element = document.querySelector('.carusel-section');
-        const keyframes = [
-            { opacity: 0 },
-            { opacity: 1 },
-        ];
+    private _stopOnInteraction(): void {
+        this.swiper.nativeElement.addEventListener('touchstart', ev => {
+            clearInterval(this.sliderInterval);
+            this.sliderDelay = 0;
+        });
+    }
 
-        if (element) {
-            element.animate(keyframes, 600);
-        }
+    private _resumeSlideScroll(): void {
+        this.swiper.nativeElement.addEventListener('touchend', ev => {
+            this._setSliderInterval(6000);
+        });
     }
 
     public mouseEnter(): void {
@@ -180,7 +178,6 @@ export class ApplicabilitySectionComponent extends BaseComponent implements OnIn
         const itemIndex = this.caruselItems.findIndex((x: any) => x.groupIndex === this.activeGroupIndex);
 
         this.paginate(itemIndex);
-        this._toggleAnimation();
     }
 
     // Pagination
@@ -196,7 +193,7 @@ export class ApplicabilitySectionComponent extends BaseComponent implements OnIn
         this._getRealSlideIndex(index);
         this.swiper.nativeElement.swiper.slideTo(this.realIndex);
         this.cdr.detectChanges();
-        this.sliderDilay = 0;
+        this.sliderDelay = 0;
         this._setSliderInterval(3000);
     }
 
