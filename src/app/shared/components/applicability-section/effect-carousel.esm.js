@@ -12,7 +12,7 @@ export default function CarouselSlider({ swiper, on }) {
     });
     on('progress', () => {
         if (swiper.params.effect !== 'carousel') return;
-        const scaleStep = 0.2;
+        const scaleStep = 0.25;
         const zIndexMax = swiper.slides.length;
         for (let i = 0; i < swiper.slides.length; i += 1) {
             const slideEl = swiper.slides[i];
@@ -26,7 +26,7 @@ export default function CarouselSlider({ swiper, on }) {
                 '.swiper-carousel-animate-opacity',
             );
             const translate = `${
-                slideProgress * modify * 86.4 * (swiper.rtlTranslate ? -1 : 1)
+                slideProgress * modify * 84 * (swiper.rtlTranslate ? -1 : 1)
             }%`;
 
             const scale = 1 - absProgress * scaleStep;
@@ -35,6 +35,7 @@ export default function CarouselSlider({ swiper, on }) {
             slideEl.style.zIndex = zIndex;
             if (absProgress > 3) {
                 slideEl.style.opacity = 0;
+                console.log(slideEl)
             } else {
                 slideEl.style.opacity = 1;
             }
