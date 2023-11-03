@@ -78,9 +78,10 @@ h2 {
     .swiper-slide {
         height: 437px;
         border-radius: 20px;
-        min-width: 650px;
+        min-width: 700px;
         width: 44.5%;
         background: #18212b;
+        overflow: hidden;
     }
 
     .swiper-pagination-bullets {
@@ -89,12 +90,11 @@ h2 {
 
     .image {
         display: inline-block;
-        margin-top: 49px;
-        height: 388px;
+        margin-top: 5.5%;
+        height: 90%;
 
         img {
-            width: 100%;
-            height: 100%;
+            height: 388px;
             display: block;
             object-fit: cover;
             border-radius: 8px;
@@ -173,20 +173,23 @@ h2 {
 
         .swiper-carousel-animate-opacity {
             flex-wrap: wrap;
-            height: auto;
+            height: 100%;
             justify-content: center;
         }
 
         .image {
-            //margin-top: 41px;
             width: 185px;
             height: 309px;
             align-self: flex-end;
+
+            img {
+                width: 185px;
+                height: 309px;
+                border-radius: 8px;
+            }
         }
 
-        img {
-            border-radius: 8px;
-        }
+
 
         .slide-text-content {
             margin-top: 70px;
@@ -217,6 +220,13 @@ h2 {
 
         .image {
             margin-top: 31px;
+            width: auto;
+            height: auto;
+
+            img {
+                width: 185px;
+                height: 307px;
+            }
         }
 
         .slide-text-content {
