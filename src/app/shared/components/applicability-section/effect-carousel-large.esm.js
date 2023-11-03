@@ -26,10 +26,10 @@ export default function CarouselSlider({ swiper, on }) {
                 translateMultiplayer = 73.3;
             } else {
                 translateMultiplayer = 79.5;
-            };
+            }
             if (absProgress > 1) {
                 modify = (absProgress - 1) * 0.1 + 1;
-            };
+            }
 
             const opacityEls = slideEl.querySelectorAll(
                 '.swiper-carousel-animate-opacity',
@@ -42,7 +42,7 @@ export default function CarouselSlider({ swiper, on }) {
             const scale = 1 - absProgress * scaleStep;
             slideEl.style.transform = `translateX(${translate}%) scale(${scale})`;
             slideEl.style.zIndex = zIndex;
-            if (absProgress > 3) {
+            if (absProgress > 3.1) {
                 slideEl.style.opacity = 0;
             } else {
                 slideEl.style.opacity = 1;
