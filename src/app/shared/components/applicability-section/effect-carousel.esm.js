@@ -35,7 +35,6 @@ export default function CarouselSlider({ swiper, on }) {
             slideEl.style.zIndex = zIndex;
             if (absProgress > 3) {
                 slideEl.style.opacity = 0;
-                console.log(slideEl)
             } else {
                 slideEl.style.opacity = 1;
             }
