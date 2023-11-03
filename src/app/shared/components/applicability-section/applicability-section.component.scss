@@ -5,6 +5,7 @@
     margin: 0 auto;
     max-width: 100%;
     overflow: hidden;
+
     .swiper-slide,
     swiper-slide {
         position: relative;
@@ -115,6 +116,8 @@ h2 {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0 10px;
+
 
         h2 {
             color: #F4F0FF;
@@ -190,12 +193,11 @@ h2 {
         }
 
 
-
         .slide-text-content {
             margin-top: 70px;
             min-width: 249px;
+            width: 65%;
             text-align: center;
-
 
             .button-default {
                 margin-top: 68px;
@@ -338,6 +340,7 @@ h2 {
 
     .animation {
         top: 0;
+
         video {
             width: 519px;
             height: 519px;
