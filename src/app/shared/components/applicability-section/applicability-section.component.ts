@@ -51,7 +51,6 @@ export class ApplicabilitySectionComponent extends BaseComponent implements OnIn
         effect: 'carousel',
         slidesPerView: 'auto',
         shortSwipes: true,
-        centeredSlides: true,
         grabCursor: false,
         speed: 500,
         resizeObserver: true,
