@@ -4,12 +4,17 @@ export default function CarouselSlider({ swiper, on }) {
         swiper.classNames.push(`${swiper.params.containerModifierClass}carousel`);
         const overwriteParams = {
             watchSlidesProgress: true,
-            centeredSlides: true,
+
         };
 
         Object.assign(swiper.params, overwriteParams);
         Object.assign(swiper.originalParams, overwriteParams);
     });
+
+    on('afterInit', () => {
+        swiper.loopFix();
+    })
+
     on('progress', () => {
         if (swiper.params.effect !== 'carousel') return;
         const scaleStep = 0.2;
@@ -66,5 +71,6 @@ export default function CarouselSlider({ swiper, on }) {
                 opacityEl.style.transitionDuration = `${duration}ms`;
             });
         }
+        swiper.loopFix()
     });
 }
