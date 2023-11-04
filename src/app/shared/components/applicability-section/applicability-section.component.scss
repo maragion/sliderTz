@@ -35,6 +35,18 @@ section {
     overflow: hidden;
 }
 
+.swiper-wrapper::part(container){
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-wrapper::part(wrapper) {
+
+    margin-left: 53.5%;
+    margin-right: auto;
+}
+
 .carousel-background {
     position: absolute;
     top: 0;
@@ -141,6 +153,12 @@ h2 {
     }
 
     @media (max-width: 1280px) {
+
+        .swiper-wrapper::part(wrapper) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
 
         .swiper-slide {
             width: 66%;
